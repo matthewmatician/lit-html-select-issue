@@ -38,6 +38,7 @@ class SelectDemo extends HTMLElement {
     }
     console.log('this.model', this.model);
     render(template(this), this.shadowRoot);
+    this.shadowRoot.querySelector('select').value = this.model.selectedOption;
   }
 
   static get observedAttributes() {

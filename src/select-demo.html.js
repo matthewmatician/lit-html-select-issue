@@ -11,7 +11,7 @@ const nav = c => html`
 const select = c => html`
 <select @change="${ev => { c.model.selectedOption = ev.currentTarget.value; c.render(); }}">
   <option value="">Select</option>
-  ${c.options.map(o => html`<option value="${o.value}" ?selected="${o.value === c.model.selectedOption}">${o.name}</option>`)}
+  ${c.options.map(o => html`<option value="${o.value}" >${o.name}</option>`)}
 </select>
 `;
 

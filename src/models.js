@@ -1,2 +1,2 @@
-export const modelA = {};
-export const modelB = {};
+export const modelA = { selectedOption: '' };
+export const modelB = { selectedOption: '' };
